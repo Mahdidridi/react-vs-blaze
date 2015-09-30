@@ -47,8 +47,8 @@ if (Meteor.isClient) {
 
   Task = React.createClass({
 
-    // uncommented, ~68ms
-    // shouldComponentUpdate(nextProps) { return nextProps._id !== this.props.id },
+    // uncommented, ~85ms
+    // shouldComponentUpdate(nextProps) { return nextProps.task._id !== this.props.task._id },
 
     propTypes: { task: React.PropTypes.object.isRequired },
     render() { return ( <li>{this.props.task._id}</li> ); }
